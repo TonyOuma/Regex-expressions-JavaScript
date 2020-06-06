@@ -1,0 +1,33 @@
+Form Validation using Regex
+
+    Regular expressions are patterns that provide a way to search and                         
+    a text
+
+    regexp consits of:- a pattern and optional flags
+    Creating reg:-
+        "long" syntax == using the new keyword
+        "short" === using slashes "/"
+
+        slashes tell JavaScript that a regexp is being created
+        NB: play the same role as quotes for strings
+            pattern using slashes does not allow for expressions to be inserted
+            used when we know the reg expression at code writing time
+
+            new RegExp - used when we need to create a regexp 'on the fly' from
+                         a dynamically generated string
+
+    Flags
+     6 of them in JavaScript
+
+     i - the search is case sensitive: no diff btn A and a
+     g - the search looks for all matches, without it only the first match is returned
+     m - multiline mode
+     s - enables the "dotall" mode, allow a dot . to match newline character \n
+     u - enables full unicode support. Enables correct processing of surrogate pairs
+     y - "Sticky" mode: searching the exact position in the text
+
+
+    Searching: str.match
+        method === str.match(regexp) - finds all matches of a regexp in the string
+
+    
