@@ -28,6 +28,31 @@ Form Validation using Regex
 
 
     Searching: str.match
-        method === str.match(regexp) - finds all matches of a regexp in the string
+        syntax === str.match(regexp) - finds all matches of a regexp in the string
 
-    
+        - It works in 3 modes:
+            1. if the reg has flag g, it returns an array of all matches:
+            2. If there's no such flag it returns only the match in the form of an array,
+                and some additional properties
+            3. If there are no matches, null returned, doesn't matter if there's flag g or not
+            
+    Replacing: str.replace
+            syntax === str.replace(regexp, replacement)
+             replaces matches found using regexp in string with replacement
+             (all matches if there's flag, otherwise, only the first one)
+
+    Testing: regexp.test
+     syntax === regexp.test(str) looks for at least one match, if found, returns
+                true, otherwise false
+
+    Character classes - a special notation that matches any symbol from a certain set
+        > digit class \d - corresponds to "any single digit"
+           without the flag g, reg only looks for the first match
+           A digit: a character from 0 to 9
+        > \s space class - space symbol includes spaces, tabs \t, newlines \n
+                            \v, \f and \r
+        > \w word class - a wordly character
+        > \D - find non-digits and remove them from the string
+
+    A dot is "any character"
+     . matches any character except a newline
