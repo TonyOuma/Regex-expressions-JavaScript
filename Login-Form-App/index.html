@@ -5,13 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3a7fd7e68.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./scss/main.css">
     <title>Login-Form | Form</title>
 
 </head>
 
 <body>
-    hello world
+    <div class="main">
+        <div class="container a-container" id="a-container">
+            <form id="a-form" class="form" method="" action="">
+                <h2 class="form_title title">
+                    Create Account
+                </h2>
+                <div class="form__icons">
+                    <span class="form__icon"><i class="fab fa-facebook"></i></span>
+                    <span class="form__icon"><i class="fab fa-linkedin-in"></i></span>
+                    <span class="form__icon"><i class="fab fa-twitter"></i></span>
+                </div>
+                <span class="form__span">or use email for registration</span>
+                <input type="text" class="form__input" placeholder="Name">
+                <input type="text" class="form__input" placeholder="Email">
+                <input type="password" class="form__input" placeholder="Password">
+                <button class="form__button button submit">SIGN IN</button>
+            </form>
+        </div>
+        <div class="container b-container" id="b-container">
+            <form action="" method="" class="form">
+                <h2 class="form_title title">Sign in to Website</h2>
+                <div class="form__icons">
+                    <span class="form__icon"><i class="fab fa-facebook"></i></span>
+                    <span class="form__icon"><i class="fab fa-linkedin-in"></i></span>
+                    <span class="form__icon"><i class="fab fa-twitter"></i></span>
+                </div>
+                <span class="form__span">or use email for registration</span>
+                <input type="text" class="form__input" placeholder="Email">
+                <input type="password" class="form__input" placeholder="Password">
+                <a href="#!" class="form__link">Forgot your password?</a>
+                <button class="form__button button submit">SIGN IN</button>
+            </form>
+        </div>
+        <div class="switch" id="switch-cnt">
+            <div class="switch__circle"></div>
+            <div class="switch__circle switch__circle--t"></div>
+            <div class="switch__container" id="switch-c1">
+                <h2 class="switch__title title">Welcome Back!</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
